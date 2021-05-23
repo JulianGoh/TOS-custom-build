@@ -1,0 +1,309 @@
+/*--------------------------------------*/
+/* Basic setup */
+/*--------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x:hidden;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ---- Headings ---- */
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 3px;
+}
+
+a{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 180%;
+    word-spacing: 3px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #14f173;  /* #14f173; #0bb654; #e67e22; */
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+h3{
+    font-size: 130%;
+    margin-bottom: 15px;
+}
+
+p{
+    word-spacing: 7px;
+    line-height: 50px;
+    margin: 15px 0;
+    font-size: 105%;
+}
+
+.text-quote{
+    margin: 50px 0;
+    font-size: 110%;
+    font-style: italic;
+    text-align: center;
+    border-top: 2px solid;
+    padding-top: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 20px;
+    word-spacing: 7px;
+    line-height: 50px;
+    margin: 15px 0;
+    font-size: 105%;
+}
+
+/* ---- Page break ---- */
+
+.section-pagebreak-summary,
+.section-pagebreak-highlights,
+.section-pagebreak-weekends,
+.section-pagebreak-mission{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(perth-city.jpg); /* Image file has to be placed in CSS directory, for god knows why */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height: 100px;
+}
+
+.section-pagebreak-summary h1,
+.section-pagebreak-highlights h1,
+.section-pagebreak-weekends h1,
+.section-pagebreak-mission h1{
+    position: absolute;
+    width: 1140px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+}
+/*--------------------------------------*/
+/* Header */
+/*--------------------------------------*/
+
+.navigation{
+    float: right;
+    margin-top: 50px;
+}
+
+.navigation li{
+    display: inline-block;
+}
+.navigation a:link,
+.navigation a:visited{
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    word-spacing: 3px; 
+    margin-left: 20px;
+    font-size: 120%;
+    border-bottom: 2px solid #14f173;
+    padding-bottom: 5px;
+}
+
+.navigation a:hover,
+.navigation a:active{
+    border-bottom: 2px solid #14f173;
+    padding-bottom: 2px;
+    transition: 0.2s;
+}
+
+/* Sticky navigation */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;          /*-- Stack index of elements --*/
+}
+.sticky .navigation{ 
+    margin-top: 12px;
+}
+
+.sticky .navigation li a:link,
+.sticky .navigation li a:visited{
+    color: #000000;
+    border-bottom: none;
+}
+
+.sticky .navigation li a:active,
+.sticky .navigation li a:hover{
+    border-bottom: 2px solid #14f173;
+    padding-bottom: 2px;
+    transition: 0.2s;
+}
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(perth-city.jpg);    
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.heading-content{
+    margin-top: 180px;
+    font-size: 115%;
+    float: right;
+    text-align: right;
+}
+
+
+.heading-content h1{
+    text-transform: none;
+    
+}
+
+/*--------------------------------------*/
+/* Section YOUTH */
+/*--------------------------------------*/
+
+.section-youth{
+    padding-top: 90px;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: left; 
+    position: relative;
+}
+
+.page-rewind i{
+    color: #000;
+    font-size: 250%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.page-rewind{
+    width: 50px;   
+    margin-left: 46%;
+}
+
+/*--------------------------------------*/
+/* Footer */
+/*--------------------------------------*/
+
+
+.social-links{
+    list-style: none;
+    float: right;
+    margin-top: 9px;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    border: 0;
+    text-decoration: none;
+    color: #888;
+    
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+    transition: 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 120%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-linkedin,
+.ion-social-instagram{
+    transition: color 0.8s;
+}
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+
+.ion-social-linkedin:hover{
+    color: #0077b5;
+}
+
+.ion-social-instagram:hover{
+    color: #e95950;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    float: center;
+    margin: 0;
+}
+
+footer{
+    background-color: #333;
+    padding: 30px;
+}

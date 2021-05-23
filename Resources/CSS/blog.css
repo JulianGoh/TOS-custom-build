@@ -1,0 +1,631 @@
+/*--------------------------------------*/
+/* Basic setup */
+/*--------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x:hidden;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ---- Headings ---- */
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 200%;
+    word-spacing: 3px;
+}
+
+a{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 180%;
+    word-spacing: 3px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #14f173;  /* #14f173; #0bb654; #e67e22; */
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+h3{
+    font-size: 130%;
+    margin-bottom: 15px;
+}
+
+p{
+    word-spacing: 5px;
+    line-height: 40px;
+    margin: 15px 0;
+    font-size: 105%;
+}
+
+.p-blog{
+    word-spacing: 7px;
+    line-height: 50px;
+    margin: 15px 0;
+    font-size: 105%;
+}
+
+.text-quote{
+    margin: 50px 0;
+    font-size: 110%;
+    font-style: italic;
+    text-align: center;
+    border-top: 2px solid;
+    padding-top: 20px;
+    border-bottom: 2px solid;
+    padding-bottom: 20px;
+    word-spacing: 7px;
+    line-height: 50px;
+    margin: 15px 0;
+    font-size: 105%;
+}
+
+.p-blog-conversation{
+    font-style: italic;
+    word-spacing: 7px;
+    line-height: 50px;
+    margin: 15px 0;
+    font-size: 105%;
+}
+
+
+
+
+/*--------------------------------------*/
+/* Header */
+/*--------------------------------------*/
+.heading-date{
+    font-size: 100%;
+}
+
+.nav{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.navigation{
+    display: inline-block;
+
+}
+
+.navigation li{
+    display: inline-block;
+    margin-right: 0px;
+}
+
+
+.landing-logo{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    min-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#navigation-1{
+    margin-left: 50px;
+}
+
+#navigation-1 li{
+    margin-right: 50px;
+}
+
+
+#navigation-2{
+    float: right;
+    margin-right: 50px;
+    padding: 10px 10px;
+    background-color: #fff;
+}
+
+#navigation-2 a{
+    color: #000000;
+}
+
+.navigation a:link,
+.navigation a:visited{
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    word-spacing: 3px; 
+    font-size: 120%;
+}
+
+/*
+.navigation a:hover,
+.navigation a:active{
+    border-bottom: 2px solid #14f173;
+    padding-bottom: 2px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.blog-navlink{
+    color: #14f173;
+}
+
+.blog-navlink:hover,
+.blog-navlink:active{
+    border-bottom: 2px solid #fff;
+
+}
+
+
+/* Sticky navigation */
+
+.sticky{
+    position: top;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;          /*-- Stack index of elements --*/
+}
+.sticky .navigation{ 
+    margin: 12px 0;
+}
+
+.sticky .navigation li a:link,
+.sticky .navigation li a:visited{
+    color: #000000;
+    border-bottom: none;
+}
+
+.sticky .navigation li a:active,
+.sticky .navigation li a:hover{
+    border-bottom: 2px solid #14f173;
+    padding-bottom: 2px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+
+header{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(perth-city-min.jpg);
+    background-image: url(library.jpg);    
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.heading-content{
+    margin-top: 180px;
+    font-size: 115%;
+    float: right;
+    text-align: right;
+}
+
+
+.heading-content h1{
+    text-transform: none;
+    
+}
+
+/* Mobile navigation */
+
+.mobile-nav i{
+    float: right;
+    font-size: 180%;
+    display: none;
+    margin-top: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*--------------------------------------*/
+/* Section WHY */
+/*--------------------------------------*/
+
+.section-why{
+    height: 100vh;
+    padding-top: 50px;
+
+    
+}
+
+/*--------------------------------------*/
+/* Section BLOG */
+/*--------------------------------------*/
+
+.section-blog{
+    padding-top: 90px;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: left; 
+    position: relative;
+}
+
+
+.img-beijing,
+.img-kohdambang,
+.img-kratie-shore,
+.img-conversation,
+.img-team-banana,
+.img-wheat,
+.img-CLR,
+.img-CLR-TTT,
+.img-cambodia,
+.img-falling-limbs,
+.img-EWB-christmas,
+.img-mt-larcom,
+.img-mt-archer,
+.img-monkey-mind,
+.img-next-mission,
+.img-cradle-mt,
+.img-heros-journey,
+.img-2020
+{
+    width:80%;
+    margin-left: 10%;
+}
+
+.img-elevate{width:100%; margin-left: 0%;}
+
+.img-lunarpark,
+.img-fed-square,
+.img-gladstone-flight,
+.img-headspace-screenshot,
+.img-five-rocks
+{
+    width: 40%;
+    margin-left: 30%;
+}
+
+.img-HCD,
+.img-GCC1,
+.img-money-matters,
+.img-mini-retirements,
+.img-2020-journal{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.img-citation-GCC1,
+.img-citation-CLR,
+.img-citation-CLR-ride,
+.img-citation-CLR-TTT,
+.img-citation-CLR-jules,
+.img-citation-lunarpark,
+.img-citation-cambodia,
+.img-citation-fed-square,
+.img-citation-falling-limbs,
+.img-citation-EWB-christmas,
+.img-citation-gladstone-flight,
+.img-citation-mt-larcom,
+.img-citation-mt-archer,
+.img-citation-headspace-screenshot,
+.img-citation-monkey-mind,
+.img-citation-next-mission,
+.img-citation-cradle-mt,
+.img-citation-heros-journey,
+.img-citation-money-matters,
+.img-citation-mini-retirements,
+.img-citation-2020{
+    font-size: 70%;
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+.img-CLR-ride,
+.img-CLR-jules{
+    width: 40%;
+    margin-left: 30%;
+}
+
+.ToMR-stages{
+    list-style: none;
+    margin-left: 50px;
+    word-spacing: 5px;
+    line-height: 40px;
+    font-size: 95%;
+}
+
+.img-citation{
+    font-size: 50%;
+    display: block;
+    text-align: right;
+    padding-right: 11%;
+    margin: 0;
+}
+
+.page-rewind i{
+    color: #000;
+    font-size: 250%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.page-rewind{
+    width: 50px;   
+    margin-left: 46%;
+}
+
+.gratitude{
+    /*transform: rotate(90deg);
+	transform-origin: left top 0;*/
+    position: absolute;
+    bottom: 16%;
+    right: 0%;
+    font-size: 700%;
+    opacity: 0.05;
+    letter-spacing: 7px;
+}
+
+.late-bloomer{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+	-webkit-transform-origin: left top 0;
+	transform-origin: left top 0;
+    position: absolute;
+    bottom: 16%;
+    left: -13%;
+    font-size: 500%;
+    opacity: 0.2;
+    letter-spacing: 7px;
+}
+
+.links-the-monkey-mind{
+    color: #000;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    margin: 15px 0;
+    font-size: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.list-monkey-mind{
+    margin-left: 40px;
+}
+/*--------------------------------------*/
+/* Blog landing */
+/*--------------------------------------*/
+
+.blog-GCC,
+.blog-melbourne-landing,
+.blog-new-year-new-year,
+.blog-new-friends,
+.blog-letting-go,
+.blog-what-is-mine,
+.blog-the-monkey-mind,
+.blog-next-mission,
+.blog-check-in,
+.blog-money-matters,
+.blog-idols,
+.blog-problems{
+    font-size: 80%;
+    height: 100vh;
+}
+
+
+.blog-365-days,
+.blog-heros-journey,
+.blog-mini-retirements,
+.blog-2020,
+.blog-elevate,
+.blog-the-voice,
+.blog-step{
+    font-size: 80%;
+    height: 80vh;
+}
+
+.blog-link{
+    text-decoration: none;
+    color:#000;
+    font-size: 100%;
+}
+
+.blog-link-365-days{color: #000; text-decoration: none; font-size: 100%; text-transform: capitalize;} /*Link to previous blog*/
+
+.blog-GCC img,
+.blog-new-year-new-year img,
+.blog-new-friends img,
+.blog-problems img{
+    margin-top: 40%; 
+}
+
+.blog-melbourne-landing img,
+.blog-heros-journey img{
+    width: 60%;
+    margin-top:3%;
+}
+
+.blog-what-is-mine img{
+    width: 80%;
+}
+
+.blog-letting-go img,
+.blog-the-monkey-mind img,
+.blog-next-mission img{
+    margin-top: 35%;
+}
+
+.blog-check-in{font-size: 80%; height: 80vh;}
+.blog-check-in img,
+.blog-365-days img,
+.blog-money-matters img{
+    margin-top: 25%
+}
+
+.blog-elevate img,
+.blog-the-voice img,
+.blog-step img{margin-top:20%}
+
+.blog-mini-retirements img,
+.blog-2020 img{
+    margin-top:25%;
+}   
+
+.blog-GCC .p-blog,
+.blog-melbourne .p-blog{
+    width: 490px;
+}
+
+.blog-new-friends .p-blog{
+    width: 517px;
+}
+
+
+#test{
+    line-height: 100vh;
+    text-align: center;
+    font-size: 200%;
+}
+/*--------------------------------------*/
+/* Blog Melbourne */
+/*--------------------------------------*/
+.blog-melbourne{
+    color: #000;
+    word-spacing: 7px;
+    line-height: 50px;
+    margin: 15px 0;
+    font-size: 105%;
+    font-style: italic;
+    text-transform: none;
+    text-decoration: none;   
+    border-bottom: 2px solid;
+}
+
+/*--------------------------------------*/
+/* Blog 365-days */
+/*--------------------------------------*/
+
+.blog-365-list, blog-elevate-list{
+    line-height: 40px;
+    margin: auto 20px;
+    padding-left: 50px;
+}
+
+/*--------------------------------------*/
+/* Footer */
+/*--------------------------------------*/
+
+.social-links{
+    list-style: none;
+    float: right;
+    margin-top: 5px;
+}
+
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child{
+    margin: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    border: 0;
+    text-decoration: none;
+    color: #888;
+    
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 120%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-linkedin,
+.ion-social-instagram{
+    -webkit-transition: color 0.8s;
+    transition: color 0.8s;
+}
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+
+.ion-social-linkedin:hover{
+    color: #0077b5;
+}
+
+.ion-social-instagram:hover{
+    color: #e95950;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    float: center;
+    margin: 0;
+}
+
+footer{
+    background-color: #333;
+    padding: 50px;
+}
+
+/* index1.html */
+.blog-footer{
+    padding: 30px;
+}
+
+.blog-footer li{
+    margin-top: 20px;
+}
