@@ -2,22 +2,7 @@
 @media only screen and (max-width: 1200px){
     .row{ padding: 0 2%; }
     
-    .section-pagebreak-summary h1,
-    .section-pagebreak-highlights h1,
-    .section-pagebreak-weekends h1,
-    .section-pagebreak-mission h1{
-        margin-left: 80px;
-    }
-
-    .section-why{height: auto;}
     
-    .section-why .row{padding-bottom: 30px;}
-    
-    .highlight-link-1{left: 18%;}
-    
-    .section-mission ul{
-        padding: 0 2%;
-    }
     
 }
 
@@ -26,26 +11,7 @@
     body{ font-size: 18px;}
     .row{ padding: 0 3%; }
 
-    .section-pagebreak-summary h1,
-    .section-pagebreak-highlights h1,
-    .section-pagebreak-weekends h1,
-    .section-pagebreak-mission h1{
-        margin-left: 60px;
-    }
     
-    .section-why{height: auto;}
-    
-    .section-why .row{padding-bottom: 20px;}
-    
-    .highlight-link-1{
-        left: 8%;
-        top: 40%;
-    }
-    
-    .highlight-link-2,
-    .highlight-link-3{
-        top: 35%;
-    }
 }
 
 /* Small phones to small tablets from 481px to 767px */
@@ -71,12 +37,6 @@
         font-size: 150%;
     }
     
-    .heading-content{ 
-        position: absolute;
-        top: 10%;
-        right: 3%;
-    }
-
 
     .navigation li{
         display: block;
@@ -97,6 +57,7 @@
     #navigation-2 a{
         color: #ffffff;
         display: block;
+        font-size: 120%;
     }
     
 
@@ -110,37 +71,20 @@
         display: block;
     }
     
-    .sticky .navigation{
-        margin-top: 14px;
-        margin-bottom: 0;
-    }
-    
-    .sticky .navigation li a:link,
-    .sticky .navigation li a:visited{
-        border: 0;
-        padding-bottom: 0;
-    }
-    
-    .sticky .mobile-nav i{
-        color:#555;
-        margin-top: 0px;
+
+    #welcome-box-1,#welcome-box-2, #about-box-2{
+        width: 100%;
+        min-width: 450px;
     }
 
-    .section-pagebreak-summary h1,
-    .section-pagebreak-highlights h1,
-    .section-pagebreak-weekends h1{
-        margin-left: 30px;
-        margin-top: 30px;
+    #about-box-1{
+        width: 90%;
     }
     
-    .section-pagebreak-mission h1{ 
-        margin-top: 15px;
-        margin-left: 30px;
+    #about-box-1 img{
+        margin-bottom: 30px;
     }
-    .section-summary ul li{line-height: 30px;}
-    
-    .section-highlights a{ font-size: 160%;}
-    
+
     .highlight-link-1{left: 18%;}
     
     footer {    
@@ -166,6 +110,39 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    #lightbox-content h2{
+        line-height: 40px;
+    }
+
+    .book-img{
+        width: 150px;
+    }
+
+    .section-reading{
+        flex-direction: column;
+    }
+
+    .reading-list{
+        padding-left: 25px;
+    }
+
+    .section-reading{
+        height: 1000px;
+    }
+
+    .reading-list,.books-selection{
+        flex-basis: auto;
+    }
+
+    .books-selection p{
+        line-height: 20px;
+    }
+
+    .book-title{
+        margin-top: 40px;
+        margin-left: 0;
+    }
 }
 
 
@@ -173,6 +150,14 @@
 @media only screen and (max-width: 480px){
     body{ font-size: 14px;}
     
+    .mobile-nav i{
+        display: block;
+        position: absolute;
+        top: 80%;
+        right: 1%;
+    }
+
+
     /*.blog-GCC,
     .blog-melbourne-landing,
     .blog-new-year-new-year,
@@ -191,7 +176,7 @@
     .blog-heros-journey{
         font-size: 80%;
         height: 60vh;
-    }*/
+    }
     
     .p-blog, 
     .text-quote{ 
@@ -242,5 +227,5 @@
         margin-left: 0%;
         font-size:60%;
         line-height: 30px;}
-
+*/
 }

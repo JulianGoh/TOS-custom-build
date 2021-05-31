@@ -14,6 +14,10 @@
 	<link rel="stylesheet" type="text/css" href="Resources/CSS/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="Resources/fontello/fontello-ea97fdcb/css/fontello.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,300italic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
     
     <link rel="apple-touch-icon" sizes="180x180" href="Resources/Favicons/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Resources/Favicons/favicons/favicon-32x32.png">
@@ -38,51 +42,58 @@
 
 	
 	<body>
-        <header>
-        <nav>
-            <div class="row">
-                <ul class="navigation js--navigation">
-                    <li> <a href="#motivation"> Motivation </a></li>
-                    <li> <a href="#progress"> Progress </a> </li>
-                    <li>  <a href="#highlights"> Highlights </a> </li>
-                    <li>  <a href="#hobbies"> Hobbies </a> </li>
-                    <li>  <a href="#worldview"> World view </a></li>
-                    <li>  <a class="blog-navlink" href="blog.html"> Blog </a></li>
+        <nav class="section-about">
+            <div class="nav">
+                <ul class="navigation js--navigation" id="navigation-1" >
+                    <li>  <a class="blog-navlink" href="index.html"> Home </a></li>
+                    <li>  <a class="blog-navlink" href="Lightbox.html"> Lightbox </a></li>
+                </ul>
+                <a href="index.html"><img class="landing-logo" src="Resources/Images/TOS logos/landing-logo-v3.png"></a>
+                <ul class="navigation js--navigation" id="navigation-2">
+                    <li>  <a class="blog-navlink" href="Reading-list.html"> The Reading List </a></li>
                 </ul>
                 <a class="mobile-nav js--mobile-nav"><i class="ion-navicon-round"></i> </a>
             </div>
-        </nav>
-        <div class="row" id="home">
-            <div class = "heading-content">
-                <h1> My name is Julian Goh. </h1>
-                <h1> And 
-                    <span class="typer" id="main" data-words="I am an engineer,I have the travel bug,I take photos, I hope to contribute, I love cycling" data-colors="white" data-delay="100" data-deleteDelay="500"></span>
-                    <span class="cursor" data-owner="main"></span>
-                </h1>
-            </div>
-        </div>
-        </header>        
 
-        <section class="section-why js--section-why" id="motivation">
+        </nav>
+        
+        <section class="section-about">
+
+            
             <div class="row">
-                <h2> Why bother with a digital portfolio </h2>
-                <div class="row">
-                <p> Coming off 4 years of full time chemical engineering, why should I learn how to code? Well, I was fresh out of uni and had a slight nostalgia for 'structured learning' and I have had some experience in coding before. I then set myself the goal of developing my own website by learning HTML and CSS from the ground up instead of shortcutting the process. At the time, it seemed like a good challenge for personal growth and since May 2017, putting in an hour or two every night towards learning has been a great experience of learning the languages through an online course and applying them in this initiating project. </p>
-                <p> Nowadays, everyone has their professional portfolio up on LinkedIn and that includes myself. Why should I bother creating a professional portfolio about myself from scratch? In addition to developing my programming skills, I would like to use this platform to share, as I develop my own narrative on how I grew up, my journey through university and other life defining moments.  </p>
+                <h1 class="section-title"> About </h1>
+                <div class="col span-1-of-2" id="about-box-1">
+                    <img src="Resources/Images/Landing/Untitled.png" alt="portrait-photo">
+                </div>
+                <div class="col span-1-of-2" id="about-box-2">
+                    <h1 class="quotation"><q>Books became my teachers, my friends and my travel companions.</q></h1>
+                    <p> ‘I was born into the hustle and bustle of the big city of Kuala Lumpur, Malaysia and then from the ages of 12 and beyond, I was raised in quiet and clean Northern suburbs of Perth, Western Australia.</p>
+                    <p>During those early years in my life, I had missed countless of opportunities to understand the power of reading. I mean, why sit still and read when I was having way more fun playing computer games?</p>
+                    <p>As a kid, most of my priorities were evidently on the here and now, never really considering the consequences of my actions in any particular moment on the days to come. </p>
+                    <p> Then one day, I discovered the classic ‘The 7 Habits of Highly Effective People’ by Stephen Covey - which is a pretty hefty book to receive as a kid who prided himself on having an excellent twitch response on the mouse and keyboard.</p>
+                    <p> It absolutely changed my world. It put the responsibility of leading my life back into my own hands. It was up to me to make the change I wanted to see in the world, nobody else was going to do it for me.</p>
+                    <p> Once I was ready to see, books became my teachers, my friends and my travel companions and much more.<p>
+                    <p> Over the years since that pivotal moment, I have gone down the rabbit hole of reading even greater books, the ones that captivated me for days on end, and others that were downright terrible and boring. <p>
+                    <p> Like us, books come in all shapes and sizes. And there is no one size fits all, which to my belief is a great thing.’<p>
+                    <br><p> Julian Goh <p>
+                    <p> Founder of The Offline Space <p>
+
                 </div>
             </div>
         </section>
-        
+        <!--
         <div class="page-rewind">
             <a href="#home"><i class="ion-ios-skipbackward-outline"></i> </a>
         </div>
+        -->
        
         <footer>
             <div class="row">
                 <ul class="social-links">
-                        <li> <a href="https://www.facebook.com/julian.goh.9"><i class="ion-social-facebook"></i> </a></li><li> <a href="#"><i class="ion-social-twitter"></i> </a></li><li> <a href="https://www.linkedin.com/in/juliangoh5/"><i class="ion-social-linkedin"></i> </a></li><li> <a href="https://www.instagram.com/shooterj1/"><i class="ion-social-instagram"></i> </a></li>
+                        <li> <a href="https://www.facebook.com/theofflinespace" target="_blank"><i class="ion-social-facebook"></i> </a></li><li> <a href="https://www.instagram.com/the_offlinespace" target="_blank"><i class="ion-social-instagram"></i> </a></li>
                  </ul>
-                <p> Copyright &copy; 2019 by Julian Goh. All rights reserved. </p>
+                <p> Copyright &copy; 2021 by The Offline Space. All rights reserved. </p>
+                <p> ABN 82 923 101 638 </p>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
