@@ -230,19 +230,19 @@ header{
     background-color: #100f10;
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 
 #welcome-box-1{
     min-width: 270px;
     height: 100%;
-    margin-left: 0px;
     overflow: hidden;
 }
 
 #welcome-box-1 img{
     height: 115vh;
-    float:right;
+    
 }
 
 #welcome-box-2{
@@ -265,7 +265,7 @@ header{
 
 #welcome-box-2 h2{
     font-size: 120%;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 /*--------------------------------------*/
@@ -404,7 +404,7 @@ header{
     flex-direction: row;
     overflow: none;
     background-color: #272725;    
-    height: 100vh;
+    height: 140vh;
 }
 
 .books-selection{

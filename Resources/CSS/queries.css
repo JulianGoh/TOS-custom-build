@@ -2,7 +2,13 @@
 @media only screen and (max-width: 1200px){
     .row{ padding: 0 2%; }
     
-    
+    .section-reading{
+        height: 180vh;
+    }
+
+    .book-title{
+        width: 300px;
+    }
     
 }
 
@@ -11,6 +17,13 @@
     body{ font-size: 18px;}
     .row{ padding: 0 3%; }
 
+    .section-reading{
+        height: 180vh;
+    }
+
+    .book-title{
+        width: 200px;
+    }
     
 }
 
@@ -21,7 +34,7 @@
     .mobile-nav i{
         display: block;
         position: absolute;
-        top: 20%;
+        top: 35%;
         right: 1%;
     }
 
@@ -77,6 +90,11 @@
         min-width: 450px;
     }
 
+    #welcome-box-1 img{
+        margin-left: 100px;
+        height: 110vh;
+    }
+
     #about-box-1{
         width: 90%;
     }
@@ -85,8 +103,17 @@
         margin-bottom: 30px;
     }
 
-    .highlight-link-1{left: 18%;}
+    #about-box-2{
+        font-size: 18px;
+    }
+
+    .section-lightbox-step1, .section-lightbox-step2,.section-lightbox-step3{
+        height: 120vh;
+    }
+
+
     
+
     footer {    
         padding: 20px; 
     }
@@ -101,15 +128,6 @@
     
     .social-links{height: 100px;}
     .ion-social-facebook{ margin-left: 50px;}
-    
-    .section-mission ul{
-        padding: 0 4%;
-    }
-    
-    .section-blog{
-        padding-left: 10%;
-        padding-right: 10%;
-    }
 
     #lightbox-content h2{
         line-height: 40px;
@@ -139,9 +157,14 @@
         line-height: 20px;
     }
 
+    .book-img{
+        width: 150px;
+    }
+
     .book-title{
-        margin-top: 40px;
-        margin-left: 0;
+        margin-top: 90px;
+        margin-left: 50px;
+        width: 200px;
     }
 }
 
@@ -153,10 +176,47 @@
     .mobile-nav i{
         display: block;
         position: absolute;
-        top: 80%;
+        top: 35%;
         right: 1%;
     }
 
+    #welcome-box-2{
+        padding: 55px 50px;
+        font-size: 20px;
+    }
+
+    #welcome-box-1 img{
+        height: 95vh;
+        margin-left: 70px;
+    }
+
+    #about-box-2{
+        font-size: 15px;
+    }
+
+    .section-lightbox-step1, .section-lightbox-step2,.section-lightbox-step3{
+        height: 130vh;
+    }
+
+    
+    .books-selection-text{
+        flex-basis:80%;
+    }
+    
+    .reading-list-book-container{
+        padding-left: 90px;
+    }
+
+    .book-img{
+        width: 230px;
+    }
+    
+    .book-title{
+        width: 100%;
+        font-size:180%;
+    }
+
+    
 
     /*.blog-GCC,
     .blog-melbourne-landing,
