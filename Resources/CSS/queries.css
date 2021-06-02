@@ -180,14 +180,18 @@
         right: 1%;
     }
 
-    #welcome-box-2{
-        padding: 55px 50px;
-        font-size: 20px;
-    }
+    
 
     #welcome-box-1 img{
-        height: 95vh;
+        height: 85vh;
         margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    #welcome-box-2{
+        padding-left:60px;
+        padding-right:80px;
+        font-size: 18px;
     }
 
     #about-box-2{
