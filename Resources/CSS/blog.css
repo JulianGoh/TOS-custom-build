@@ -234,18 +234,20 @@ header{
 
 
 #welcome-box-1{
-    min-width: 270px;
-    height: 100%;
     overflow: hidden;
 }
 
 #welcome-box-1 img{
-    height: 115vh;
+    height: auto;
+    width: 100%;
+    max-width: 450px;
     
 }
 
 #welcome-box-2{
-    padding: 85px 90px;
+    padding: 85px 30px;
+    max-width: 500px;
+    width:100%;
 }
 
 #welcome-box-2 h1{
@@ -318,19 +320,19 @@ header{
 }
 
 #about-box-1{
-    height: auto;
-    margin-left: 0px;
     overflow: hidden;
 }
 
 #about-box-1 img{
-    width: 75%;
-    float: right;
+    width: 100%;
+    max-width: 450px;
 }
 
 #about-box-2{
     font-size: 85%;
-    padding: 0px 70px 0px 70px;
+    max-width: 450px;
+    margin-left: 50px;
+    width:100%;
 }
 
 #about-box-2 p{
@@ -342,7 +344,12 @@ header{
 /*--------------------------------------*/
 
 .section-lightbox-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.05)),url(greg-torosiants-YFto4J5Upzk-unsplash-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.05)),url(greg-torosiants-YFto4J5Upzk-unsplash-min.jpg);   
+    background-size: cover;
+    height: 98vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .section-lightbox-step1{
@@ -388,6 +395,10 @@ header{
     background-image: url(alex-block-PdDBTrkGYLo-unsplash-min.jpg);
     background-position: 50% 100%;
     background-size: cover;
+    height: 98vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 #tail-end{
@@ -403,7 +414,7 @@ header{
     flex-direction: row;
     overflow: none;
     background-color: #272725;    
-    height: 140vh;
+    height: 120vh;
 }
 
 .books-selection{

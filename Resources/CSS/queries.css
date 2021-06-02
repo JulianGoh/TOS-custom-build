@@ -9,6 +9,19 @@
     .book-title{
         width: 300px;
     }
+
+    .section-lightbox-step1, .section-lightbox-step2,.section-lightbox-step3{
+        height: 50vh;
+    }
+
+    #lightbox-content{
+        font-size: 125%;
+    }
+
+    .section-reading{
+        height: 80vh;
+    }
+
     
 }
 
@@ -24,7 +37,23 @@
     .book-title{
         width: 200px;
     }
+
+    #about-box-2{
+        max-width: 300px;
+    }
     
+    .section-lightbox-step1, .section-lightbox-step2,.section-lightbox-step3{
+        height: 80vh;
+    }
+
+    #lightbox-content{
+        font-size: 125%;
+    }
+
+    .section-reading{
+        height:100vh;
+    }
+
 }
 
 /* Small phones to small tablets from 481px to 767px */
@@ -84,31 +113,31 @@
         display: block;
     }
     
-
-    #welcome-box-1,#welcome-box-2, #about-box-2{
-        width: 100%;
-        min-width: 450px;
+    #welcome-box-1{
+        margin-left: 150px;
     }
 
-    #welcome-box-1 img{
-        margin-left: 100px;
-        height: 110vh;
+    #welcome-box-2{
+        max-width: 767px;
+        width:100%;
+        font-size: 110%;
     }
 
-    #about-box-1{
-        width: 90%;
+    #about-box-2{
+        max-width: 170px;
     }
     
     #about-box-1 img{
         margin-bottom: 30px;
     }
 
-    #about-box-2{
-        font-size: 18px;
-    }
 
     .section-lightbox-step1, .section-lightbox-step2,.section-lightbox-step3{
-        height: 120vh;
+        height: 100vh;
+    }
+
+    #lightbox-content{
+        font-size: 125%;
     }
 
 
@@ -180,35 +209,45 @@
         right: 1%;
     }
 
-    
+    #welcome-box-1{
+        margin-left: 0px;
+    }
 
     #welcome-box-1 img{
-        height: 85vh;
-        margin-left: 70px;
-        margin-right: 70px;
     }
 
     #welcome-box-2{
-        padding-left:60px;
-        padding-right:80px;
         font-size: 18px;
     }
 
     #about-box-2{
         font-size: 15px;
+        width: 100%;
+        max-width: 350px;
+        padding: 0 50px;
+        margin-left:0;
     }
 
     .section-lightbox-step1, .section-lightbox-step2,.section-lightbox-step3{
-        height: 130vh;
+        height: 100vh;
+    }
+
+    #lightbox-content{
+        padding-right: 50px;
+        font-size: 120%;
     }
 
     
-    .books-selection-text{
+    .books-selection{
         flex-basis:80%;
     }
     
     .reading-list-book-container{
-        padding-left: 90px;
+        padding-left: 50px;
+    }
+
+    .book-title{
+        margin-left:0px;
     }
 
     .book-img{
@@ -218,6 +257,7 @@
     .book-title{
         width: 100%;
         font-size:180%;
+        margin-top: 20px;
     }
 
     
