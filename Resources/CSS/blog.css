@@ -182,7 +182,7 @@ p, ul{
 
 header{
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(perth-city-min.jpg);
-    background-image: url(library.jpg);    
+    background-image: url(library-min.jpg);    
     background-size: cover;
     height: 98vh;
     background-attachment: fixed;
@@ -325,7 +325,7 @@ header{
 }
 
 #about-box-1 img{
-    width: 90%;
+    width: 75%;
     float: right;
 }
 
@@ -343,11 +343,11 @@ header{
 /*--------------------------------------*/
 
 .section-lightbox-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.05)),url(greg-torosiants-YFto4J5Upzk-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.05)),url(greg-torosiants-YFto4J5Upzk-unsplash-min.jpg);
 }
 
 .section-lightbox-step1{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.2)), url(l-odyssee-belle-IMtEliM53Lc-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.2)), url(l-odyssee-belle-IMtEliM53Lc-unsplash-min.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -355,7 +355,7 @@ header{
 }
 
 .section-lightbox-step2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.2)), url(christiann-koepke-CTE7O3WbAkg-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.2)), url(christiann-koepke-CTE7O3WbAkg-unsplash-min.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -363,7 +363,7 @@ header{
 }
 
 .section-lightbox-step3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.2)), url(blaz-photo-zMRLZh40kms-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.2)), url(blaz-photo-zMRLZh40kms-unsplash-min.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -386,7 +386,7 @@ header{
 /*--------------------------------------*/
 
 .section-reading-header{
-    background-image: url(alex-block-PdDBTrkGYLo-unsplash.jpg);
+    background-image: url(alex-block-PdDBTrkGYLo-unsplash-min.jpg);
     background-position: 50% 100%;
     background-size: cover;
 }
