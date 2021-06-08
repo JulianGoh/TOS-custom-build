@@ -227,13 +227,13 @@
     #about-box-2{
         font-size: 15px;
         width: 100%;
-        max-width: 350px;
+        max-width: 480px;
         padding: 0 50px;
         margin-left:0;
     }
 
     .section-lightbox-step1, .section-lightbox-step2,.section-lightbox-step3{
-        height: 100vh;
+        height: 110vh;
     }
 
     #lightbox-content{
