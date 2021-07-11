@@ -181,7 +181,7 @@ p, ul{
 /*--------------------------------------*/
 
 header{
-    background-image: url(library-min.jpg);    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.40)),url(library-min.jpg);    
     background-size: cover;
     height: 98vh;
     background-attachment: scroll;
