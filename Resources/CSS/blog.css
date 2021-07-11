@@ -197,22 +197,34 @@ header{
 /*--------------------------------------*/
 
 .section-welcome{
-    height: 100vh;
-    background-color: #100f10;
-    position: relative;
 }
 
 .section-welcome .row{
     width: 100%;
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .section-welcome h1{
     margin-bottom: 50px;
+}
+
+#welcome-subheading{
+    font-size: 120%;
+    width:50%;
+}
+
+#welcome-link{
+    text-decoration: none;
+    text-transform: none;
+    border: solid;
+    padding: 10px 20px;
+    background-color: #000;
+    font-size: 100%;
 }
 
 .section-welcome h2{
@@ -235,19 +247,19 @@ header{
 
 #welcome-box-1{
     overflow: hidden;
+    max-width:300px;
 }
 
 #welcome-box-1 img{
-    height: auto;
+    max-height: 500px;
     width: 100%;
-    max-width: 450px;
     
 }
 
 #welcome-box-2{
-    padding: 85px 30px;
-    max-width: 500px;
-    width:100%;
+    padding: 85px 50px;
+    height: 450px;
+    border: solid;
 }
 
 #welcome-box-2 h1{
@@ -269,6 +281,52 @@ header{
     line-height: 30px;
 }
 
+#how, #where{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.how-container{
+    width: 50%;
+}
+
+.how-container-image{
+    max-width: 300px;
+}
+
+.how-container-image img{
+    width: 100%;
+}
+
+.where-container{
+    width: 50%;
+    order:1;
+}
+
+.where-container-image{
+    max-width: 300px;
+    order:2;
+}
+
+.where-container-image img{
+    width: 100%;
+}
+
+#tenets{
+    border-top: solid #fff;
+    border-bottom: solid #fff;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.tenet-container{
+    width: 30%;
+    text-align: center;
+}
 /*--------------------------------------*/
 /* Section CONNECT */
 /*--------------------------------------*/
@@ -296,6 +354,19 @@ header{
     font-size: 100%;
 }
 
+#section-connect-text label{
+    color:#000;
+}
+
+#send-button{
+    text-decoration: none;
+    text-transform: none;
+    border: solid;
+    padding: 10px 40px;
+    background-color: #000;
+    font-size: 100%;
+    color: #fff;
+}
 
 /*--------------------------------------*/
 /* Section ABOUT */

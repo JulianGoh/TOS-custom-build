@@ -213,6 +213,14 @@
         height:90vh;
     }
 
+    .section-welcome .row{
+        width: 95%;
+    }
+
+    #welcome-subheading{
+        width: 80%;
+    }
+
     #welcome-box-1{
         margin-left: 0px;
     }
@@ -222,6 +230,26 @@
 
     #welcome-box-2{
         font-size: 18px;
+    }
+
+    #how, #where{
+        flex-direction: column;
+    }
+
+    .how-container, .where-container{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    #tenets{
+        flex-direction: column;
+        align-items: center;
+        padding:0;
+    }
+
+    .tenet-container{
+        width: 60%;
+        margin: 30px 0 30px 0;
     }
 
     #about-box-2{
