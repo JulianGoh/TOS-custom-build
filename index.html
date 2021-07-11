@@ -36,6 +36,26 @@
 
     gtag('config', 'G-T4QPZHTSPD');
     </script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script>
+    function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/15312/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("Form Data Submitted :)")
+            },
+            error: function(){
+                alert("There was an error :(")
+            }
+        });
+    }
+    </script>
     
 </head>
 
@@ -44,85 +64,102 @@
         <header>
             <nav>
                 <div class="nav">
-                    <ul class="navigation js--navigation" id="navigation-1" >
+                    <!--<ul class="navigation js--navigation" id="navigation-1" >
                         <li>  <a class="blog-navlink" href="About.html"> About </a></li>
                         <li>  <a class="blog-navlink" href="Lightbox.html"> Lightbox </a></li>
-                    </ul>
+                    </ul>!-->
                     <a href="index.html"><img class="landing-logo" src="Resources/Images/TOS logos/landing-logo-v3.png"></a>
-                    <ul class="navigation js--navigation" id="navigation-2">
+                    <!--<ul class="navigation js--navigation" id="navigation-2">
                         <li>  <a class="blog-navlink" href="Reading-list.html"> The Reading List </a></li>
                     </ul>
-                    <a class="mobile-nav js--mobile-nav"><i class="ion-navicon-round"></i> </a>
+                    <a class="mobile-nav js--mobile-nav"><i class="ion-navicon-round"></i> </a>!-->
                 </div>
 
             </nav>
-    
-        </header>        
-        <section class="section-welcome" id="welcome">
-            <div class="row">
-                <h1> Welcome to The Offline Space.</h1>
-                <h2> An automated bookstore and learning hub. </h2>
-                <h3> Est. Gladstone, Queensland. </h3>
-            </div>
-        </section>    
-        <section class="section-why" id="why">
+            <section class="section-welcome" id="welcome">
+                <div class="row">
+                    <h1> Brick-and-mortar store visits should be memorable. </h1>
+                    <h1 id="welcome-subheading"> We want to help hospitality and service businesses become more resilient by feeding your customers more than just basic sustenance. </h1>
+                    <a href="#why" id="welcome-link"> How might this work? </a>
+                </div>
+            </section> 
+        </header>           
+        <!--<section class="section-why">
             <div class="row">
                 <div class="col span-1-of-2" id="welcome-box-1">
                     <img src="Resources/Images/Landing/Compressed/laura-davidson-ULP07chR5EQ-unsplash-min.jpg" alt="chair-and-table-aesthetic">
                 </div>
                 <div class="col span-1-of-2" id="welcome-box-2">
-                    <h1> Why? </h1>
-                    <p> In today’s modern world, the pace of change and the flood of new information is so quick that it often overwhelms the individual.</p>
-                    <ul>
-                        <li>Who do I want to be? I can be anyone!</li>
-                        <li>What should I do? I can do everything!</li>
-                        <li>Where should I go? Everywhere!</li>
-                    </ul>
-                    <p> In a world with too much information, there comes about a lack of clarity on how best to use this knowledge in order to deal with the present and to move into the future. </p>
-                    <p> Then the question becomes: How should I learn?</p>
-                    <p> This is The Offline Space. </p>
+                    <h1> How? </h1>
+                    <p> We seek to do this through a subscription based model which provides your customers with access to a curated, rotating selection of high quality, timeless and publicly vetted books.</p>
+                    <p> A choose-your-own-adventure each time they make the effort to visit your brick-and-mortar store.</p>
+                </div>
+            </div>
+        </section> !-->
+        <section class="section-why">
+            <div class="row" id="how">
+                <div class="how-container-image">
+                    <img src="Resources/Images/Landing/Compressed/laura-davidson-ULP07chR5EQ-unsplash-min.jpg" alt="chair-and-table-aesthetic">
+                </div>
+                <div class="how-container">
+                    <h1> How? </h1>
+                    <p> We seek to do this through a subscription based model which provides your customers with access to a curated, rotating selection of high quality, timeless and publicly vetted books.</p>
+                    <p> A choose-your-own-adventure each time they make the effort to visit your brick-and-mortar store.</p>
+                </div>"
+            </div>
+        </section>
+        <section class="section-why">
+            <div class="row" id="tenets">
+                <div class="tenet-container">
+                    <h1>Accessibility</h1>
+                    <p> Hands-off and no labour cost to you. Enabled via self-checkout, automated payment technology through deployment of Square Terminals.</p>
+                </div>
+                <div class="tenet-container">
+                    <h1>Quality</h1>
+                    <p>Books are timeless, as tools for learning, gifts for others or mementos of special occassions. <br>Your customers get access to a selection of the highest quality, publicly vetted and time-tested, books.</p>
+                </div>
+                <div class="tenet-container">
+                    <h1>Community</h1>
+                    <p>Brick-and-mortar stores turned into vibrant, offline spaces for learning. <br>Great books by themselves are not enough - the real lessons that stick are earnt through the application of knowledge, and the articulation of those war stories with others.</p>
                 </div>
             </div>
         </section>
-        <section class="section-why" id="why">
+        <section class="section-why">
+            <div class="row" id="where">
+                <div class="where-container-image">
+                    <img src="Resources/Images/Landing/Compressed/mark-basarab-z8ct_Q3oCqM-unsplash-min.jpg" alt="road-leading-to-mountain-peaks">
+                </div>
+                <div class="where-container">
+                    <h1> Where are we going? </h1>
+                    <p> We see a future of satellite learning communities all over Australia, where individuals are empowered to learn well and more high quality books are in the hands, eyes and hearts of more people.</p>
+                </div>"
+            </div>
+        </section>
+        <!--<section class="section-why" id="why">
             <div class="row">
                 <div class="col span-1-of-2" id="welcome-box-1">
                     <img src="Resources/Images/Landing/Compressed/mark-basarab-z8ct_Q3oCqM-unsplash-min.jpg" alt="road-leading-to-mountain-peaks">
                 </div>
                 <div class="col span-1-of-2" id="welcome-box-2">
-                    <h1> How? </h1>
-                    <p> Fast food. Fast information. Fast responses.</p>
-                    <p> We all lost touch with patience a long time ago, and nowadays it is easier than ever to absorb and succumb to whatever shows up first on our screens. </p>
-                    <p> The Offline Space seeks out all that which is slow.</p>
-                    <p> Old, timeless knowledge that has been filtered through the tests of reality and human experience. </p>
-                    <p> How might we do this? </p>
-                    <p> Through books.</p>
+                    <h1> Where are we going? </h1>
+                    <p> We see a future of satellite learning communities all over Australia, where individuals are empowered to learn well and more high quality books are in the hands, eyes and hearts of more people.</p>
                 </div>
             </div>
         </section>
-        <section class="section-why" id="why">
-            <div class="row">
-                <div class="col span-1-of-2" id="welcome-box-1">
-                    <img src="Resources/Images/Landing/Compressed/jaredd-craig-HH4WBGNyltc-unsplash-min.jpg" alt="bookstore-stack-of-books">
-                </div>
-                <div class="col span-1-of-2" id="welcome-box-2">
-                    <h1> What? </h1>
-                    <h2> An automated bookstore and learning hub accessible by day or by night.</h2><br><br>
-                    <h2> The Vision: </h2>
-                    <p> Today, we live in a frantic, modern world where information is fast, cheap and abundant but knowledge is scarce.</p>
-                    <p> We believe in access to slow, timeless knowledge that has been filtered through the tests of time and human experience. </p><br><br>
-                    <h2> The Mission: </h2>
-                    <p> We are builders of communities for learning. </p>
-                    <p> Through access to time tested books, The Offline Space seeks to carve out and cultivate a hub for the individual to learn well, and a community to do so alongside with.  </p>
-                </div>
-            </div>
-        </section>
+        !-->
         <section class="section-connect">
             <div class="row" id="section-connect-text">
                 <h1> Are you in? </h1>
-                <h2> Keep in touch. </h2>
-                <a href="https://www.facebook.com/theofflinespace" target="_blank"> The Offline Space on Facebook </a>
-                
+                <h2> Let's connect. </h2>
+                <!--<a href="https://www.facebook.com/theofflinespace" target="_blank"> The Offline Space on Facebook </a>
+                !-->
+                <form id="myForm">
+                    <label for="name">What's your name?</label>
+                    <input type="name" id="name" name="name"><br><br>
+                    <label for="email">Best email to contact:</label>
+                    <input type="email" id="email" name="email" required="required"> <br><br>
+                </form>
+                <button onclick="SubForm()" id="send-button">Send!</button>
             </div>
         </section>
         <!--
