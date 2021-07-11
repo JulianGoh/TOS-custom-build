@@ -184,7 +184,7 @@ header{
     background-image: url(library-min.jpg);    
     background-size: cover;
     height: 98vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -237,7 +237,7 @@ header{
 /* Section WHY */
 /*--------------------------------------*/
 
-.section-why{
+.section-container{
     background-color: #100f10;
     padding-top: 50px;
     padding-bottom: 50px;
