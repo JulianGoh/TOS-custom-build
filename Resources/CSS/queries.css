@@ -70,7 +70,6 @@
     .nav{
         height: 100px;
         margin-top: 0;
-        padding-top: 100px;
     }
     
     .navigation{
@@ -211,6 +210,10 @@
         right: 1%;
     }
 
+    .landing-logo{
+        max-width:180px;
+    }
+
     header, .section-lightbox-header, .section-reading-header{
         height:90vh;
     }
@@ -254,6 +257,10 @@
         margin: 30px 0 30px 0;
     }
 
+    .third-place-quote{
+        padding: 0 30px 0 30px;
+    }
+    
     #about-box-2{
         font-size: 15px;
         width: 100%;
