@@ -372,6 +372,15 @@ header{
     color: #fff;
 }
 
+#send-button:active{
+    color:red;
+}
+
+#backup-email{
+    color: #000;
+    margin-top: 50px;
+}
+
 /*--------------------------------------*/
 /* Section ABOUT */
 /*--------------------------------------*/
