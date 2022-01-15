@@ -132,11 +132,13 @@ nav{
 
 .li-nav{
     padding-top: 30px;
+    margin-left: 30px;
 }
 
 
 .nav-link{
-    margin-left: 30px;
+    padding: 10px 20px;
+    font-weight: 700;
 }
 
 
