@@ -1,89 +1,143 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <title>The Offline Space</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Welcome to The Offline Space. An automated bookstore and learning hub."
+    />
+    <meta name="author" content="Julian Goh" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Resources/CSS/blog.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/CSS/queries.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/CSS/grid.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Resources/CSS/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Resources/fontello/fontello-ea97fdcb/css/fontello.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,300italic"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-	<title> The Offline Space </title>
-    <meta charset="utf-8">
-	<meta name="description" content="Welcome to The Offline Space. An automated bookstore and learning hub.">
-	<meta name="author" content="Julian Goh">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="Resources/CSS/blog.css">
-	<link rel="stylesheet" type="text/css" href="Resources/CSS/queries.css">
-	<link rel="stylesheet" type="text/css" href="Resources/CSS/grid.css">
-	<link rel="stylesheet" type="text/css" href="Resources/CSS/ionicons.min.css">
-	<link rel="stylesheet" type="text/css" href="Resources/fontello/fontello-ea97fdcb/css/fontello.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,300italic" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="Resources/Favicons/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Resources/Favicons/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Resources/Favicons/favicons/favicon-16x16.png">
-    <link rel="manifest" href="Resources/Favicons/favicons/site.webmanifest">
-    <link rel="mask-icon" href="Resources/Favicons/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Resources/Favicons/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Resources/Favicons/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Resources/Favicons/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Resources/Favicons/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="Resources/Favicons/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4QPZHTSPD"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T4QPZHTSPD"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-T4QPZHTSPD');
+      gtag("config", "G-T4QPZHTSPD");
     </script>
 
     <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
     <script>
-    function SubForm (){
+      function SubForm() {
         $.ajax({
-            url:"https://api.apispreadsheets.com/data/15312/",
-            type:"post",
-            data:$("#myForm").serializeArray(),
-            success: function(){
-                alert("We'll be in touch :)")
-            },
-            error: function(){
-                alert("There was an error :(")
-            }
+          url: "https://api.apispreadsheets.com/data/15312/",
+          type: "post",
+          data: $("#myForm").serializeArray(),
+          success: function () {
+            alert("We'll be in touch :)");
+          },
+          error: function () {
+            alert("There was an error :(");
+          },
         });
-    }
+      }
     </script>
-    
-</head>
+  </head>
 
-	
-	<body>
-        <header>
-            <nav>
-                <div>
-                    <ul class="ul-nav js--navigation">
-                        <li class = "li-nav"><a href="index.html"  class="nav-link"> Home </a></li>
-                        <li class = "li-nav"><a href="About.html" class="nav-link"> About </a></li>
-                        <li class = "li-nav"><a href="Reading-list.html" class="nav-link"> Reading List </a></li>
-                    </ul>
-                    
-                </div>
-                <a href="index.html"><img class="landing-logo" src="Resources/Images/TOS logos/untitled (15).png"></a>
-                <a class="mobile-nav js--mobile-nav"><i class="ion-navicon-round"></i> </a>
-
-            </nav>
-            <section class="section-welcome" id="welcome">
-                <div class="row">
-                    <h1> Brick-and-mortar store visits should be memorable. </h1>
-                    <h1 id="welcome-subheading"> We want to help cafes and restaurants become more resilient by feeding your customers more than just basic sustenance. </h1>
-                    <a href="#how-link" id="welcome-link"> How might this work? </a>
-                </div>
-            </section> 
-        </header>           
-        <!--<section class="section-why">
+  <body>
+    <header>
+      <nav>
+        <div>
+          <ul class="ul-nav js--navigation">
+            <li class="li-nav">
+              <a href="index.html" class="nav-link"> Home </a>
+            </li>
+            <li class="li-nav">
+              <a href="About.html" class="nav-link"> About </a>
+            </li>
+            <li class="li-nav">
+              <a href="Reading-list.html" class="nav-link"> Reading List </a>
+            </li>
+          </ul>
+        </div>
+        <a href="index.html"
+          ><img
+            class="landing-logo"
+            src="Resources/Images/TOS logos/untitled (15).png"
+        /></a>
+        <a class="mobile-nav js--mobile-nav"
+          ><i class="ion-navicon-round"></i>
+        </a>
+      </nav>
+      <section class="section-welcome" id="welcome">
+        <div class="row">
+          <h1>Brick-and-mortar store visits should be memorable.</h1>
+          <h1 id="welcome-subheading">
+            We want to help cafes and restaurants become more resilient by
+            feeding your customers more than just basic sustenance.
+          </h1>
+          <a href="#how-link" id="welcome-link"> How might this work? </a>
+        </div>
+      </section>
+    </header>
+    <!--<section class="section-why">
             <div class="row">
                 <div class="col span-1-of-2" id="welcome-box-1">
                     <img src="Resources/Images/Landing/Compressed/laura-davidson-ULP07chR5EQ-unsplash-min.jpg" alt="chair-and-table-aesthetic">
@@ -95,48 +149,91 @@
                 </div>
             </div>
         </section> !-->
-        <section class="section-container" id="how-link">
-            <div class="row" id="how">
-                <div class="how-container-image">
-                    <img src="Resources/Images/Landing/Compressed/laura-davidson-ULP07chR5EQ-unsplash-min.jpg" alt="chair-and-table-aesthetic">
-                </div>
-                <div class="how-container">
-                    <h1> How? </h1>
-                    <p> We seek to do this through a subscription based model that provides your customers with access to a curated, rotating selection of high quality, timeless and publicly vetted physical books.</p>
-                    <p> A choose-your-own-adventure each time they make the effort to visit your brick-and-mortar store.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section-container">
-            <div class="row" id="tenets">
-                <div class="tenet-container">
-                    <h1>Accessibility</h1>
-                    <p> Hands-off and no labour cost to you. <br><br>Enabled via self-checkout, automated payment technology through deployment of Square Terminals.</p>
-                </div>
-                <div class="tenet-container">
-                    <h1>Quality</h1>
-                    <p>Time is precious. We filter out the noise so that your customers will see only the highest quality physical books.<br><br>Books are timeless - as tools for learning, life catalysts, gifts for others or mementos of special occassions.</p>
-                </div>
-                <div class="tenet-container">
-                    <h1>Community</h1>
-                    <p>Brick-and-mortar stores turned into vibrant, offline spaces for learning. <br><br>Great books by themselves are not enough - the real lessons that stick are earnt through the application of knowledge learnt and sharing those stories with others.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section-container">
-            <div class="row" id="where">
-                <div class="where-container-image">
-                    <img src="Resources/Images/Landing/Compressed/mark-basarab-z8ct_Q3oCqM-unsplash-min.jpg" alt="road-leading-to-mountain-peaks">
-                </div>
-                <div class="where-container">
-                    <h1> Where are we going? </h1><br>
-                    <h2> The Third Place</h2>
-                    <p class="third-place-quote"> &ldquo; We all need somewhere to go. Somewhere that’s not work and somewhere that’s not home. Somewhere we can meet people — people we know and, sometimes, people we don’t. We all need a place that’s open and non-judgemental, that’s accessible and accommodating, that’s casual and lively and fun. Somewhere where we can consume, but isn’t just about consumption. Somewhere we can meet, somewhere we can talk, somewhere we can just be. We all need a third place. &rdquo;<br> - Henry Oliver</p>
-                    <p> By working in partnership with local businesses, we see a future of emergent, satellite learning communities all over Australia, where individuals are empowered to learn well and more high quality books are in the hands, eyes and hearts of more people.</p>
-                </div>
-            </div>
-        </section>
-        <!--<section class="section-why" id="why">
+    <section class="section-container" id="how-link">
+      <div class="row" id="how">
+        <div class="how-container-image">
+          <img
+            src="Resources/Images/Landing/Compressed/20210304_065045-min.jpg"
+            alt="bar-counter-at-coffeeshop"
+          />
+        </div>
+        <div class="how-container">
+          <h1>How?</h1>
+          <p>
+            We seek to do this through a subscription based model that provides
+            your customers with access to a curated, rotating selection of high
+            quality, timeless and publicly vetted physical books.
+          </p>
+          <p>
+            A choose-your-own-adventure each time they make the effort to visit
+            your brick-and-mortar store.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-container">
+      <div class="row" id="tenets">
+        <div class="tenet-container">
+          <h1>Accessibility</h1>
+          <p>
+            Hands-off and no labour cost to you. <br /><br />Enabled via
+            self-checkout, automated payment technology through deployment of
+            Square Terminals.
+          </p>
+        </div>
+        <div class="tenet-container">
+          <h1>Quality</h1>
+          <p>
+            Time is precious. We filter out the noise so that your customers
+            will see only the highest quality physical books.<br /><br />Books
+            are timeless - as tools for learning, life catalysts, gifts for
+            others or mementos of special occassions.
+          </p>
+        </div>
+        <div class="tenet-container">
+          <h1>Community</h1>
+          <p>
+            Brick-and-mortar stores turned into vibrant, offline spaces for
+            learning. <br /><br />Great books by themselves are not enough - the
+            real lessons that stick are earnt through the application of
+            knowledge learnt and sharing those stories with others.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-container">
+      <div class="row" id="where">
+        <div class="where-container-image">
+          <img
+            src="Resources/Images/Landing/Compressed/20210508_085626-min.jpg"
+            alt="people-talking-in-coffeeshop"
+          />
+        </div>
+        <div class="where-container">
+          <h1>Where are we going?</h1>
+          <br />
+          <h2>The Third Place</h2>
+          <p class="third-place-quote">
+            &ldquo; We all need somewhere to go. Somewhere that’s not work and
+            somewhere that’s not home. Somewhere we can meet people — people we
+            know and, sometimes, people we don’t. We all need a place that’s
+            open and non-judgemental, that’s accessible and accommodating,
+            that’s casual and lively and fun. Somewhere where we can consume,
+            but isn’t just about consumption. Somewhere we can meet, somewhere
+            we can talk, somewhere we can just be. We all need a third place.
+            &rdquo;<br />
+            - Henry Oliver
+          </p>
+          <p>
+            By working in partnership with local businesses, we see a future of
+            emergent, satellite learning communities all over Australia, where
+            individuals are empowered to learn well and more high quality books
+            are in the hands, eyes and hearts of more people.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--<section class="section-why" id="why">
             <div class="row">
                 <div class="col span-1-of-2" id="welcome-box-1">
                     <img src="Resources/Images/Landing/Compressed/mark-basarab-z8ct_Q3oCqM-unsplash-min.jpg" alt="road-leading-to-mountain-peaks">
@@ -148,40 +245,57 @@
             </div>
         </section>
         !-->
-        <section class="section-connect">
-            <div class="row" id="section-connect-text">
-                <h1> Are you in? </h1>
-                <h2> Let's connect. </h2>
-                <!--<a href="https://www.facebook.com/theofflinespace" target="_blank"> The Offline Space on Facebook </a>
+    <section class="section-connect">
+      <div class="row" id="section-connect-text">
+        <h1>Are you in?</h1>
+        <h2>Let's connect.</h2>
+        <!--<a href="https://www.facebook.com/theofflinespace" target="_blank"> The Offline Space on Facebook </a>
                 !-->
-                <form id="myForm">
-                    <label for="name">What's your name?</label>
-                    <input type="name" id="name" name="name" required="required"><br><br>
-                    <label for="email">Best email to contact:</label>
-                    <input type="email" id="email" name="email" required="required"> <br><br>
-                </form>
-                <button onclick="SubForm()" id="send-button">Send!</button><br>
-                <h3 id=backup-email> Alternatively, say hello at theofflinespace4680@gmail.com.</h3>
-            </div>
-        </section>
-        <!--
+        <form id="myForm">
+          <label for="name">What's your name?</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            required="required"
+          /><br /><br />
+          <label for="email">Best email to contact:</label>
+          <input type="email" id="email" name="email" required="required" />
+          <br /><br />
+        </form>
+        <button onclick="SubForm()" id="send-button">Send!</button><br />
+        <h3 id="backup-email">
+          Alternatively, say hello at theofflinespace4680@gmail.com.
+        </h3>
+      </div>
+    </section>
+    <!--
         <div class="page-rewind">
             <a href="#home"><i class="ion-ios-skipbackward-outline"></i> </a>
         </div>
         -->
-       
-        <footer>
-            <div class="row">
-                <ul class="social-links">
-                        <li> <a href="https://www.facebook.com/theofflinespace" target="_blank"><i class="ion-social-facebook"></i> </a></li><li> <a href="https://www.instagram.com/the_offlinespace" target="_blank"><i class="ion-social-instagram"></i> </a></li>
-                 </ul>
-                <p> Copyright &copy; 2021 by The Offline Space. All rights reserved. </p>
-                <p> ABN 82 923 101 638 </p>
-            </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="Resources/Jquery/script.js"></script>
-        <script src="Resources/Jquery/jquery.waypoints.min.js"></script>
-        <script src="Resources/Jquery/typer.js"></script>
-	</body>
+
+    <footer>
+      <div class="row">
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/theofflinespace" target="_blank"
+              ><i class="ion-social-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/the_offlinespace" target="_blank"
+              ><i class="ion-social-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p>Copyright &copy; 2021 by The Offline Space. All rights reserved.</p>
+        <p>ABN 82 923 101 638</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Resources/Jquery/script.js"></script>
+    <script src="Resources/Jquery/jquery.waypoints.min.js"></script>
+    <script src="Resources/Jquery/typer.js"></script>
+  </body>
 </html>
